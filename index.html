@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamConnect - HR Communication Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-comments"></i>
+                <h1>Sounds like a messenger or HR SaaS</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><i class="fas fa-comment-dots"></i> Messages</li>
+                    <li><i class="fas fa-users"></i> Team</li>
+                    <li><i class="fas fa-calendar-alt"></i> Calendar</li>
+                    <li><i class="fas fa-tasks"></i> Tasks</li>
+                    <li><i class="fas fa-file-alt"></i> Documents</li>
+                    <li><i class="fas fa-chart-bar"></i> Reports</li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Avatar">
+                    <span class="status-badge online"></span>
+                </div>
+                <div class="user-info">
+                    <h3>Anna Smith</h3>
+                    <p>HR Manager</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header>
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search messages, employees...">
+                </div>
+                <div class="header-actions">
+                    <button class="btn-notification">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <button class="btn-settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="chat-container">
+                <div class="chat-list">
+                    <h2>Recent Conversations</h2>
+                    
+                    <div class="chat-item active">
+                        <div class="chat-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Contact Avatar">
+                            <span class="status-badge online"></span>
+                        </div>
+                        <div class="chat-info">
+                            <div class="chat-header">
+                                <h3>Maxim Petrov</h3>
+                                <span class="chat-time">10:42</span>
+                            </div>
+                            <p class="chat-preview">Good day! When is the next team meeting?</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-item">
+                        <div class="chat-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Contact Avatar">
+                            <span class="status-badge offline"></span>
+                        </div>
+                        <div class="chat-info">
+                            <div class="chat-header">
+                                <h3>Elena Ivanova</h3>
+                                <span class="chat-time">Yesterday</span>
+                            </div>
+                            <p class="chat-preview">Thank you for the information about the new training!</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-item">
+                        <div class="chat-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Contact Avatar">
+                            <span class="status-badge online"></span>
+                        </div>
+                        <div class="chat-info">
+                            <div class="chat-header">
+                                <h3>Alexander Nikolaev</h3>
+                                <span class="chat-time">Yesterday</span>
+                            </div>
+                            <p class="chat-preview">Received your message about new employees...</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-item">
+                        <div class="chat-avatar">
+                            <div class="group-chat-avatar">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="chat-info">
+                            <div class="chat-header">
+                                <h3>HR Team</h3>
+                                <span class="chat-time">2 days</span>
+                            </div>
+                            <p class="chat-preview">Olga: Let's discuss the new evaluation system...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="message-area">
+                    <div class="message-header">
+                        <div class="contact-info">
+                            <div class="chat-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Contact Avatar">
+                                <span class="status-badge online"></span>
+                            </div>
+                            <div>
+                                <h3>Maxim Petrov</h3>
+                                <p>Online</p>
+                            </div>
+                        </div>
+                        <div class="message-actions">
+                            <button><i class="fas fa-phone"></i></button>
+                            <button><i class="fas fa-video"></i></button>
+                            <button><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="messages">
+                        <div class="date-divider">
+                            <span>Today</span>
+                        </div>
+                        
+                        <div class="message received">
+                            <div class="message-content">
+                                <p>Hi, Anna! How are you today?</p>
+                                <span class="message-time">10:30</span>
+                            </div>
+                        </div>
+                        
+                        <div class="message sent">
+                            <div class="message-content">
+                                <p>Hello, Maxim! Everything is good, thank you. Working on a new employee adaptation project.</p>
+                                <span class="message-time">10:32</span>
+                            </div>
+                        </div>
+                        
+                        <div class="message received">
+                            <div class="message-content">
+                                <p>Sounds great! By the way, I wanted to know when our next team meeting is scheduled?</p>
+                                <span class="message-time">10:35</span>
+                            </div>
+                        </div>
+                        
+                        <div class="message sent">
+                            <div class="message-content">
+                                <p>The team meeting is scheduled for Thursday at 14:00. I'll send you a calendar invitation.</p>
+                                <span class="message-time">10:38</span>
+                            </div>
+                        </div>
+                        
+                        <div class="message received">
+                            <div class="message-content">
+                                <p>Good day! When is the next team meeting?</p>
+                                <span class="message-time">10:42</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="message-input">
+                        <button class="attach-btn">
+                            <i class="fas fa-paperclip"></i>
+                        </button>
+                        <input type="text" placeholder="Type a message...">
+                        <button class="emoji-btn">
+                            <i class="far fa-smile"></i>
+                        </button>
+                        <button class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="details-panel">
+                    <div class="details-header">
+                        <h2>Information</h2>
+                        <button class="close-details">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-profile">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Contact Profile">
+                            <h3>Maxim Petrov</h3>
+                            <p>Developer</p>
+                        </div>
+                        
+                        <div class="contact-info-list">
+                            <div class="info-item">
+                                <span class="info-label">Email</span>
+                                <span class="info-value">maxim.petrov@company.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+7 (900) 123-45-67</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Department</span>
+                                <span class="info-value">Development</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Manager</span>
+                                <span class="info-value">Sergey Kuznetsov</span>
+                            </div>
+                        </div>
+                        
+                        <div class="shared-files">
+                            <h4>Shared Files</h4>
+                            <div class="file-item">
+                                <i class="far fa-file-pdf"></i>
+                                <div class="file-info">
+                                    <span class="file-name">Report_Q2_2023.pdf</span>
+                                    <span class="file-date">15.06.2023</span>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <i class="far fa-file-excel"></i>
+                                <div class="file-info">
+                                    <span class="file-name">KPI_2023.xlsx</span>
+                                    <span class="file-date">02.05.2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
